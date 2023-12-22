@@ -9,9 +9,9 @@ router.post("/register", UserRegister);
 router.post("/login", UserLogin);
 
 //order
-router.post("/add", UcheckAuth, AddOrder);
+router.post("/add/order", UcheckAuth, AddOrder);
 
 //product
-router.get("/view", UcheckAuth, viewProducts);
+router.get("/view/order", UcheckAuth, viewProducts);
 
 module.exports = router;

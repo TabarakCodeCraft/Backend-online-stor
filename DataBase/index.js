@@ -3,6 +3,9 @@ require("dotenv").config();
 
 const client = new Client({
   connectionString: process.env.DATABASE_CONNECTION,
+  ssl:{
+    rejectUnauthorized: false,
+  }
 });
 
 client
